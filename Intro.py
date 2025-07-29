@@ -33,5 +33,5 @@ a = 10
 b = 20
 c = 30
 print(a < b and b < c)  # True
-print(a < b or b > c)   # True
+print(a < b or b > c)   # Truegit
 print(not (a < b))      # False
