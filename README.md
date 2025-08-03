@@ -11,3 +11,5 @@ A section on the main page is designated to offer links whereby a user is able t
 
 I have enjoyed creating my first website as well as undertaking my first project. I look forward to creating more and contributing my skills to better myself and aid the community at large
 Thank you.
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2657a1f1-1c1c-4a99-af63-20f9ce8de004/deploy-status)](https://app.netlify.com/projects/kariukikimotho/deploys)
