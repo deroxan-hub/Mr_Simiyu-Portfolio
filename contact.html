@@ -40,9 +40,11 @@
     </p>
 
     <!-- Contact Form with Netlify -->
-    <form name="contact" method="POST" data-netlify="true" action="/thank-you.html" class="space-y-6 bg-white shadow rounded-xl p-6">
-      <!-- Hidden input for Netlify -->
-      <input type="hidden" name="form-name" value="contact">
+    <form name="contact" method="POST" data-netlify="true" action="/thank-you.html">
+  <input type="hidden" name="form-name" value="contact">
+  <!-- rest of your inputs -->
+</form>
+
 
       <div>
         <label for="name" class="block text-sm font-medium text-slate-700">Name</label>
