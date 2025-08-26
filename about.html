@@ -1,67 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About - Kariuki Kimotho</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Me</a>
-        <a href="contact.html">Contact Me</a>
-    </nav>
-    <h1>About Kariuki</h1>
-            <!-- Paragraph -->
-             <p>I am a graduate student with a Degree in Corporate Communication and Management from Jomo Kenyatta University of Agriculture and Technology</p>
-             <p> As a result of working within the Construction industry as an intern at Crown Paints Kenya PLC within the Business Development Department for more than five months, i have gained experience and appropriate skills within the professional sector</p>
-             <p>As a result of my hard work, i received an extension to continue working until I finished school and graduated in June, 2025</p>
-             <p>My interest in coding and Development came about as a result of the exposure the school has given me, whereby i have had the opportunty to learn about the value of having IT skills such as coding. This aroused my curiosity, and thus I began my coding journey, whereby Power Learning Project was able to make that dream a success.</p>
-             <p>I am slowly growing my skills and portfolio using gaining an aptitude to create using languages such as Python and CSS</p>
-                <p>In my free time, I enjoy reading books on technology and business and exploring new programming languages, and contributing to open-source projects.</p>
+<body class="bg-slate-50 text-slate-800">
 
-    <!-- headings -->
-     <h1>Education</h1>
-      <ul>
-        <!-- ordered lists -->  
-        <ol type="i" start ="1">
-            <li>University: Bachelor's Degree in Corporate Communication and Management from Jomo Kenyatta University of Agriculture and Technology</li>
-            <li>High School: Dawamu Academy</li>
-            <li>Primary School: Hospital Hill Primary School</li>
+  <!-- Header (same as homepage) -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex h-16 justify-between items-center">
+        <a href="index.html" class="text-xl font-bold tracking-tight text-emerald-600">
+          Kariuki Kimotho
+        </a>
+        <nav class="hidden md:flex space-x-6 text-slate-700 font-medium">
+          <a href="index.html#projects" class="hover:text-emerald-600">Projects</a>
+          <a href="index.html#skills" class="hover:text-emerald-600">Skills</a>
+          <a href="about.html" class="hover:text-emerald-600">About</a>
+          <a href="contact.html" class="hover:text-emerald-600">Contact</a>
+        </nav>
+        <button id="menu-btn" class="md:hidden text-slate-700 focus:outline-none">☰</button>
+      </div>
+      <div id="mobile-menu" class="hidden md:hidden flex-col mt-2 space-y-2 bg-white rounded-lg shadow p-4">
+        <a href="index.html#projects" class="block hover:text-emerald-600">Projects</a>
+        <a href="index.html#skills" class="block hover:text-emerald-600">Skills</a>
+        <a href="about.html" class="block hover:text-emerald-600">About</a>
+        <a href="contact.html" class="block hover:text-emerald-600">Contact</a>
+      </div>
+    </div>
+  </header>
 
-      <section>
-          <h2>My CV, certificates, and Recommendations are included below</h2>
-            <ul>
-                <ul>
-  <li>CV: <a href="Resume_1.pdf.pdf" target="_blank">View my CV</a></li>
-  <li>Certificates: 
-    <ul>
-      <li><a href="Business Communications certificate.pdf.pdf" target="_blank">Business Communications Certificate</a></li>
-      <li><a href="Customer relation management certificate.pdf.pdf" target="_blank">Customer Relation Management Certificate</a></li>
-      <li><a href="Data science and analytics certificate.pdf.pdf" target="_blank">Data Science and Analytics Certificate</a></li>
-    </ul>
-  </li>
-  <li>Recommendations:
-    <ul>
-      <li><a href="Recommendation.pdf.pdf" target="_blank">Recommendation Letter 1</a></li>
-      <li><a href="Recommendation2.pdf.pdf" target="_blank">Recommendation Letter 2</a></li>  
-    <ul>
-        
-    <ul>
-     <li>I am an avid coder conversant in languages such as Python and CSS</li
-     <li>Former Business Development Intern with professional experience at Crown Paints Kenya PLC</li>
-       
-        </ul>      
-    <!-- headings -->
-    <h2>My Hobbies</h2>
-        <ul>
-            <li>Reading books on technology and business</li>
-            <li>Exploring new programming languages</li>
-            <li>Contributing to open-source projects</li>
-            <li>Traveling and experiencing different cultures</li>
-            <li>Playing videogames</li>
-            <li>Reading books and watching films</li>
-            <li>Jogging and Swimming</li>
-        </ul>
-       <h3>Thank you.</h3>
-    </html>
+ <!-- About Section -->
+<section class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 grid md:grid-cols-2 gap-10 items-start">
+  <!-- Profile Image -->
+  <div class="flex justify-center">
+    <img src="IMG_0315[1].JPG" alt="Kariuki Kimotho"
+         class="rounded-2xl shadow-lg object-cover w-72 h-72 md:w-80 md:h-80">
+  </div>
+
+  <!-- About Text -->
+  <div class="space-y-6">
+    <h1 class="text-3xl sm:text-4xl font-bold text-slate-900">About Kariuki</h1>
+
+    <div class="space-y-3 text-base sm:text-lg leading-relaxed text-slate-600">
+      <h2 class="text-xl font-semibold text-slate-800">My Journey</h2>
+      <p>I am a graduate student with a Degree in Corporate Communication and Management from Jomo Kenyatta University of Agriculture and Technology.</p>
+      <p>As a result of working within the Construction industry as an intern at Crown Paints Kenya PLC within the Business Development Department for more than five months, I have gained experience and appropriate skills within the professional sector.</p>
+      <p>As a result of my hard work, I received an extension to continue working until I finished school and graduated in June, 2025.</p>
+      <p>My interest in coding and Development came about as a result of the exposure the school has given me, whereby I had the opportunity to learn about the value of having IT skills such as coding. This aroused my curiosity, and thus I began my coding journey, whereby Power Learning Project was able to make that dream a success.</p>
+      <p>Currently I am an avid developer with a passion for creating practical, user-friendly, and visually appealing digital experiences, slowly growing my skills and portfolio while gaining an aptitude to create using languages such as Python and CSS.</p>
+      <p>In my free time, I enjoy reading books on technology and business, exploring new programming languages, and contributing to open-source projects.</p>
+    </div>
+
+    <div class="space-y-3 text-base sm:text-lg leading-relaxed text-slate-600">
+      <h2 class="text-xl font-semibold text-slate-800">Education</h2>
+      <ol class="list-decimal list-inside space-y-2">
+        <li>University: Bachelor's Degree in Corporate Communication and Management from Jomo Kenyatta University of Agriculture and Technology</li>
+        <li>High School: Dawamu Academy</li>
+        <li>Primary School: Hospital Hill Primary School</li>
+      </ol>
+    </div>
+
+    <div class="space-y-3 text-base sm:text-lg leading-relaxed text-slate-600">
+      <h2 class="text-xl font-semibold text-slate-800">My CV, Certificates, and Recommendations</h2>
+      <ul class="list-disc list-inside space-y-2">
+        <li>
+          <a href="Resume_1.pdf.pdf" target="_blank" class="text-emerald-600 hover:underline">View my CV</a>
+        </li>
+        <li>Certificates:
+          <ul class="list-disc list-inside ml-6 space-y-1">
+            <li><a href="Business Communications certificate.pdf.pdf" target="_blank" class="text-emerald-600 hover:underline">Business Communications Certificate</a></li>
+            <li><a href="Customer relation management certificate.pdf.pdf" target="_blank" class="text-emerald-600 hover:underline">Customer Relation Management Certificate</a></li>
+            <li><a href="Data science and analytics certificate.pdf.pdf" target="_blank" class="text-emerald-600 hover:underline">Data Science and Analytics Certificate</a></li>
+          </ul>
+        </li>
+        <li>Recommendations:
+          <ul class="list-disc list-inside ml-6 space-y-1">
+            <li><a href="Recommendation.pdf.pdf" target="_blank" class="text-emerald-600 hover:underline">Recommendation Letter 1</a></li>
+            <li><a href="Recommendation2.pdf.pdf" target="_blank" class="text-emerald-600 hover:underline">Recommendation Letter 2</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</section>
+  <!-- End About Section -->
+
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="mt-16 border-t border-slate-200 py-8 text-center text-sm text-slate-500">
+    © <span id="year"></span> Kariuki Kimotho. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+  </script>
+</body>
+</html>

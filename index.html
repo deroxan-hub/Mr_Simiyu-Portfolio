@@ -1,137 +1,130 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>KARIUKI KIMOTHO</title>
-  <link rel="stylesheet" href="styles.css">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 20px;
-      background-color: #ffffff;
-      text-align: left;
-    }
+  <title>Kariuki Kimotho - Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-800">
 
-    header {
-      background-color: #4c9eaf;
-      color: rgb(63, 66, 133);
-      padding: 30px 0;
-      text-align: center;
-      width: 100%;
-      margin: 0;
-      position: relative;
-      left: -20px;
-      padding-left: -20px;
-      padding-right: 20px;
-      box-sizing: border-box
-    }
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex h-16 justify-between items-center">
+        <!-- Logo / Name -->
+        <a href="index.html" class="text-xl font-bold tracking-tight text-emerald-600">
+          Kariuki Kimotho
+        </a>
 
-    nav a {
-    color: rgba(207, 33, 33, 0.991);
-    margin: 0 15px;
-    text-decoration: underline;
-    font-weight: bold;
-    }
+        <!-- Desktop Menu -->
+        <nav class="hidden md:flex space-x-6 text-slate-700 font-medium">
+          <a href="#projects" class="hover:text-emerald-600">Projects</a>
+          <a href="#skills" class="hover:text-emerald-600">Skills</a>
+          <a href="about.html" class="hover:text-emerald-600">About</a>
+          <a href="contact.html" class="hover:text-emerald-600">Contact</a>
+        </nav>
 
-    main {
-    margin-top: 20px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
-    }
+        <!-- Mobile Toggle -->
+        <button id="menu-btn" class="md:hidden text-slate-700 focus:outline-none">
+          ☰
+        </button>
+      </div>
 
-    </style>
-    </head>
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden flex-col mt-2 space-y-2 bg-white rounded-lg shadow p-4">
+        <a href="#projects" class="block hover:text-emerald-600">Projects</a>
+        <a href="#skills" class="block hover:text-emerald-600">Skills</a>
+        <a href="about.html" class="block hover:text-emerald-600">About</a>
+        <a href="contact.html" class="block hover:text-emerald-600">Contact</a>
+      </div>
+    </div>
+  </header>
 
-    <body>
-        <!-- headings -->
-        <h1>Welcome to My Portfolio</h1>
-        <!-- paragraph -->
-        <p>Hi. My Name is Kariuki Kimotho</p>
-        <p>I am a web developer with a passion for creating interactive and user-friendly websites. I have experience in various programming languages and enjoy exploring new technologies. My goal is to build innovative solutions that enhance user experiences.</p>
-        <p>Feel free to explore my work and get in touch!</p>
+  <!-- Hero Section -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 grid md:grid-cols-2 gap-10 items-center">
+    <!-- Text -->
+    <div>
+      <h1 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">
+        Welcome to My Portfolio
+      </h1>
+      <p class="text-base sm:text-lg leading-relaxed text-slate-600 mb-6">
+        <!-- Your original intro content goes here -->
+        My name is Kariuki Kimotho, a Corporate communications & Management graduate, passionate developer and creative professional. This portfolio showcases my journey, skills, and achievements.
+        Feel free to explore my projects and get in touch!
+      </p>
+      <a href="#projects" class="inline-block bg-emerald-600 text-white px-6 py-3 rounded-xl shadow hover:bg-emerald-700 transition">
+        View My Work
+      </a>
+    </div>
 
-        </p>Some of the programming languages I am skilled in </p>
-        <!-- un-ordered lists -->
-        <ul>
-            <li>Web Development</li>
-            <li>Python</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-             <!-- semantic html -->
-              <header>
-                <h1>Kariuki Kimotho</h1>
-                <nav>
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About Me</a>
-                    <a href="contact.html">Contact Me</a>
-                </nav>
-              </header>
-              <!-- Main/primary content -->
-      <main>
-        <article>
-            <p>Feel free to explore my work and get in touch!</p>
-             <!-- headings -->
-            <h1>My various Achievements include:</h1>
-            <ul>
-                <li>Graduated with a Bachelor's Degree in Corporate Communication and Management from Jomo Kenyatta University of Agriculture and Technology</li>
-                <li>Interned at Crown Paints Kenya PLC in the Business Development Department</li>
-                <li> Successful Database Administration and Technical support through working with the Primavera database system</li>
-        </article>
-    </section>
+    <!-- Photo Placeholder -->
+    <div class="flex justify-center">
+      <img src="IMG_0315[1].JPG" alt="Kariuki Kimotho"
+           class="rounded-2xl shadow-lg object-cover w-64 h-64">
+    </div>
+  </section>
 
-    <section>
-        <h2>My Skills and various passions</h2>
-        <ul>
-            <li>I am an avid coder conversant in languages such as python and css</li>
-            <li>Former Business Development Intern with professional experience at Crown Paints Kenya PLC</li>
-            <li>Corporate Communications Graduate from JKUAT</li>
-          </ul>
-        </section>
+  <!-- Projects Section -->
+  <section id="projects" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <h2 class="text-2xl font-bold text-slate-900 mb-8">Projects</h2>
+    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <!-- Example Project Card -->
+      <div class="rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition p-4 bg-white">
+        <img src="Screenshot (98).png" alt="Project 1" class="rounded-lg w-full h-40 object-cover" />
+        <h3 class="mt-4 font-semibold text-lg">Project 1</h3>
+        <p class="text-slate-600 text-sm mt-2">
+          <!-- Keep your original project description here -->
+          My very first website deployed on netlify.
+        </p>
+      </div>
 
-        <section>
-        <h2>My Hobbies</h2>
-        <ul>
-              <!-- ordered lists -->  
-        <ol type="i" start ="1">
-            <li>Reading books on technology and business</li>
-            <li>Exploring new programming languages</li>
-            <li>Contributing to open-source projects</li>
-            <li>Traveling and experiencing different cultures</li>
-            <li>Playing videogames</li>
-            <li>Watching films and offering my thoughts and criticisms on letterboxd</li>
-        </ul>
-        </section>
+      <!-- Repeat for other projects -->
+       <div class="rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition p-4 bg-white">
+        <img src="Screenshot (99).png" alt="Project 1" class="rounded-lg w-full h-40 object-cover" />
+        <h3 class="mt-4 font-semibold text-lg">Mini Calculator</h3>
+        <p class="text-slate-600 text-sm mt-2">
+          <!-- Keep your original project description here -->
+          A mini calculator for basic arithmetic operations. The source code is available on my GitHub.
+        </p>
+    </div>
+  </section>
 
-        <section>
-        <h3>Fun fact:</h3>
-          <p>Did you know that an Avocado is a fruit, and the first computer mouse was made of wood</p>
+  <!-- Skills Section -->
+  <section id="skills" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <h2 class="text-2xl font-bold text-slate-900 mb-8">Skills</h2>
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+      <div class="rounded-lg bg-white shadow p-4 text-center hover:shadow-md transition">
+        HTML
+      </div>
+      <div class="rounded-lg bg-white shadow p-4 text-center hover:shadow-md transition">
+        CSS
+      </div>
+      <div class="rounded-lg bg-white shadow p-4 text-center hover:shadow-md transition">
+        JavaScript
+      </div>
+      <div class="rounded-lg bg-white shadow p-4 text-center hover:shadow-md transition">
+        Python
+      </div>
+      <div class="rounded-lg bg-white shadow p-4 text-center hover:shadow-md transition">
+        Git & GitHub
+      </div>
+      <!-- Add more skill cards as needed -->
+    </div>
+  </section>
 
-        <h3> Quick Links</h3>
-  <main>
-    <div class="contact-info">
-      <h3>Contact Me</h3>
-      <ul>
-        <li>
-       <a href="https://www.linkedin.com/in/kariuki-kimotho-0810b9293/" target="_blank" rel="noopener norferrer">
-            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="23" height="23">
-            Visit my LinkedIn
-        </li>
-        <li>
-          <a href="mailto:kariuki.kimotho14@gmail.com">
-            <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email" width="23" height="23">
-            Email Me
-          </a>
-        </li>
-        <li>
-          <a href="tel:+254708756941">
-            <img src="https://cdn-icons-png.flaticon.com/512/597/597177.png" alt="Phone" width="23" height="23">
-            Call Me: +254 708 756 941
-          </a>
-          <!-- footer -->
-    <footer>
-        <p>&copy; 2025.Kariuki's Portfolio. All rights reserved.</p>
-       <style></style>
+  <!-- Footer -->
+  <footer class="mt-16 border-t border-slate-200 py-8 text-center text-sm text-slate-500">
+    © <span id="year"></span> Kariuki Kimotho. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
