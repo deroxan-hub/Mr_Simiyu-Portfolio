@@ -31,14 +31,15 @@
   </header>
 
   <!-- Contact Section -->
-  <section class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+  <section class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16" id="main-content">
     <h1 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">Get in Touch</h1>
     <p class="text-base sm:text-lg text-slate-600 mb-10">
       I’d love to hear from you! Whether it’s a project, a question, or to say hello — drop me a message below.
     </p>
 
     <!-- Netlify Contact Form -->
-    <form name="contact" method="POST" data-netlify="true" action="/thank-you.html" class="space-y-6 bg-white shadow rounded-xl p-6">
+    <form name="contact" method="POST" data-netlify="true" id="submit" class="space-y-6 bg-white shadow rounded-xl p-6"> 
+      <!-- Removed the action attribute, from above, which was bringing errors and replaced it with JS to show thank you message. -->
       <!-- hidden input for Netlify -->
       <input type="hidden" name="form-name" value="contact">
 
@@ -60,7 +61,7 @@
                   class="mt-2 w-full rounded-lg border border-slate-300 px-4 py-2 focus:ring-2 focus:ring-emerald-600 focus:outline-none"></textarea>
       </div>
 
-      <button type="submit" class="w-full bg-emerald-600 text-white py-3 rounded-lg shadow hover:bg-emerald-700 transition">
+      <button type="submit" value="submit" id="submit" class="w-full bg-emerald-600 text-white py-3 rounded-lg shadow hover:bg-emerald-700 transition">
         Send Message
       </button>
     </form>
@@ -76,6 +77,19 @@
     const btn = document.getElementById('menu-btn');
     const menu = document.getElementById('mobile-menu');
     btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+    document.getElementById('submit').addEventListener('submit', function(event) {
+    // Change the form content to thank you message using JavaScript
+    document.getElementById('main-content').innerHTML = `<section class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center">
+    <h1 class="text-4xl font-bold text-emerald-600 mb-6">Thank You!</h1>
+    <p class="text-lg text-slate-700 mb-8">
+      Your message has been successfully submitted. I’ll get back to you as soon as possible.  
+    </p>
+    <a href="index.html" class="inline-block bg-emerald-600 text-white px-6 py-3 rounded-lg shadow hover:bg-emerald-700 transition">
+      Back to Home
+    </a>
+  </section>` 
+});
+// Deleted the thank you page and replaced it with JS to show thank you message on the same page.
   </script>
 </body>
 </html>
