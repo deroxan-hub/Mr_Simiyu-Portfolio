@@ -18,6 +18,48 @@
       transform: scale(1.02);
       transition: transform 0.3s ease;
     }
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      height: 0;
+      overflow: hidden;
+      border-radius: 0.5rem;
+      background-color: #f8fafc;
+    }
+    .video-container iframe,
+    .video-container video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+    .play-button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 60px;
+      height: 60px;
+      background-color: rgba(99, 102, 241, 0.8);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .play-button:hover {
+      background-color: rgba(99, 102, 241, 1);
+      transform: translate(-50%, -50%) scale(1.1);
+    }
+    .play-button i {
+      color: white;
+      font-size: 20px;
+      margin-left: 4px;
+    }
+
   </style>
 </head>
 <body class="bg-slate-50 text-slate-800">
@@ -75,7 +117,7 @@
 
     <!-- Profile Photo -->
     <div class="flex justify-center">
-      <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&h=400&q=80" alt="Ivan Simiyu - Radio Consultant"
+      <img src="IMG_2414.PNG" alt="Ivan Simiyu - Radio Consultant"
            class="rounded-2xl shadow-lg object-cover w-64 h-64">
     </div>
   </section>
@@ -88,32 +130,37 @@
       <!-- Example Project Card -->
       <div class="rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition p-4 bg-white">
         <div class="flex items-center justify-center bg-slate-100 rounded-lg p-2">
-          <img src="https://images.unsplash.com/photo-1589903308904-d969a5ad15d9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=400&q=80" alt="Podcast Strategy" class="project-image" />
+          <img src="IMG_0495.jpg" class="project-image" />
         </div>
         <h3 class="mt-4 font-semibold text-lg">Podcast Strategy</h3>
         <p class="text-slate-600 text-sm mt-2">
-          Consulted for podcasts on content direction, sound branding, and listener engagement.
+          Studio Operations,Technical Management and Sound branding..
         </p>
       </div>
 
       <div class="rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition p-4 bg-white">
         <div class="flex items-center justify-center bg-slate-100 rounded-lg p-2">
-          <img src="https://images.unsplash.com/photo-1601924994987-69e26d50dc26?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=400&q=80" alt="Studio Training" class="project-image" />
+          <img src="IMG_0246.PNG" alt="Studio Training" class="project-image" />
         </div>
         <h3 class="mt-4 font-semibold text-lg">Studio Training</h3>
         <p class="text-slate-600 text-sm mt-2">
-          Provided training on production equipment, live broadcasting, and sound engineering.
+          Multimedia Design, Social Media Management & Live Broadcasting.
         </p>
       </div>
 
-      <!-- Additional Project Card -->
+       <!-- Video Project Card -->
       <div class="rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition p-4 bg-white">
-        <div class="flex items-center justify-center bg-slate-100 rounded-lg p-2">
-          <img src="https://images.unsplash.com/photo-1599658880436-444c5a6f90ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=400&q=80" alt="Audio Branding" class="project-image" />
+        <div class="video-container" id="videoContainer">
+          
+          <iframe src="Snapchat-80505430.mp4" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen>
+          </iframe>
         </div>
-        <h3 class="mt-4 font-semibold text-lg">Audio Branding</h3>
+        <h3 class="mt-4 font-semibold text-lg">Live Broadcast Sample</h3>
         <p class="text-slate-600 text-sm mt-2">
-          Developed unique audio identities for radio stations and media companies.
+          A sample of my live radio broadcasting work..
         </p>
       </div>
 
