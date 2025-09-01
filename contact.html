@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact - Kariuki Kimotho</title>
+  <title>Contact - Ivan Simiyu</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-slate-50 text-slate-800">
@@ -12,84 +12,83 @@
   <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex h-16 justify-between items-center">
-        <a href="index.html" class="text-xl font-bold tracking-tight text-emerald-600">Kariuki Kimotho</a>
+        <a href="index.html" class="text-xl font-bold tracking-tight text-emerald-600">
+          Ivan Simiyu
+        </a>
         <nav class="hidden md:flex space-x-6 text-slate-700 font-medium">
-          <a href="index.html#projects" class="hover:text-emerald-600">Projects</a>
+          <a href="index.html#portfolio" class="hover:text-emerald-600">Portfolio</a>
           <a href="index.html#skills" class="hover:text-emerald-600">Skills</a>
           <a href="about.html" class="hover:text-emerald-600">About</a>
-          <a href="contact.html" class="hover:text-emerald-600">Contact</a>
+          <a href="contact.html" class="text-emerald-600 font-semibold">Contact</a>
         </nav>
         <button id="menu-btn" class="md:hidden text-slate-700 focus:outline-none">☰</button>
       </div>
       <div id="mobile-menu" class="hidden md:hidden flex-col mt-2 space-y-2 bg-white rounded-lg shadow p-4">
-        <a href="index.html#projects" class="block hover:text-emerald-600">Projects</a>
+        <a href="index.html#portfolio" class="block hover:text-emerald-600">Portfolio</a>
         <a href="index.html#skills" class="block hover:text-emerald-600">Skills</a>
         <a href="about.html" class="block hover:text-emerald-600">About</a>
-        <a href="contact.html" class="block hover:text-emerald-600">Contact</a>
+        <a href="contact.html" class="block text-emerald-600 font-semibold">Contact</a>
       </div>
     </div>
   </header>
 
   <!-- Contact Section -->
-  <section class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16" id="main-content">
-    <h1 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">Get in Touch</h1>
-    <p class="text-base sm:text-lg text-slate-600 mb-10">
-      I’d love to hear from you! Whether it’s a project, a question, or to say hello — drop me a message below.
+  <section class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <h1 class="text-3xl font-bold text-slate-900 mb-6">Get in Touch</h1>
+    <p class="text-slate-600 mb-8">
+      Interested in working together? Fill out the form below or reach me directly via email.
     </p>
 
-    <!-- Netlify Contact Form -->
-    <form name="contact" method="POST" data-netlify="true" id="submit" class="space-y-6 bg-white shadow rounded-xl p-6"> 
-      <!-- Removed the action attribute, from above, which was bringing errors and replaced it with JS to show thank you message. -->
-      <!-- hidden input for Netlify -->
-      <input type="hidden" name="form-name" value="contact">
-
+    <!-- Contact Form -->
+    <form class="grid gap-6 bg-white rounded-xl shadow p-6" 
+          action="https://formspree.io/f/{your-form-id}" method="POST">
       <div>
         <label for="name" class="block text-sm font-medium text-slate-700">Name</label>
         <input type="text" id="name" name="name" required
-               class="mt-2 w-full rounded-lg border border-slate-300 px-4 py-2 focus:ring-2 focus:ring-emerald-600 focus:outline-none" />
+               class="mt-1 w-full border border-slate-300 rounded-lg px-3 py-2 
+                      focus:ring-emerald-500 focus:border-emerald-500" />
       </div>
 
       <div>
         <label for="email" class="block text-sm font-medium text-slate-700">Email</label>
         <input type="email" id="email" name="email" required
-               class="mt-2 w-full rounded-lg border border-slate-300 px-4 py-2 focus:ring-2 focus:ring-emerald-600 focus:outline-none" />
+               class="mt-1 w-full border border-slate-300 rounded-lg px-3 py-2 
+                      focus:ring-emerald-500 focus:border-emerald-500" />
       </div>
 
       <div>
         <label for="message" class="block text-sm font-medium text-slate-700">Message</label>
-        <textarea id="message" name="message" rows="5" required
-                  class="mt-2 w-full rounded-lg border border-slate-300 px-4 py-2 focus:ring-2 focus:ring-emerald-600 focus:outline-none"></textarea>
+        <textarea id="message" name="message" rows="4" required
+                  class="mt-1 w-full border border-slate-300 rounded-lg px-3 py-2 
+                         focus:ring-emerald-500 focus:border-emerald-500"></textarea>
       </div>
 
-      <button type="submit" value="submit" id="submit" class="w-full bg-emerald-600 text-white py-3 rounded-lg shadow hover:bg-emerald-700 transition">
+      <button type="submit" 
+              class="bg-emerald-600 text-white px-6 py-3 rounded-xl shadow 
+                     hover:bg-emerald-700 transition">
         Send Message
       </button>
     </form>
+
+    <!-- Extra Info -->
+    <div class="mt-10 text-slate-600">
+      <p>Email: <a href="mailto:ivansimiyu8@gmail.com" class="text-emerald-600 hover:underline">ivansimiyu8@gmail.com</a></p>
+      <p class="mt-2">Location: Nairobi, Kenya</p>
+    </div>
   </section>
 
   <!-- Footer -->
   <footer class="mt-16 border-t border-slate-200 py-8 text-center text-sm text-slate-500">
-    © <span id="year"></span> Kariuki Kimotho. All rights reserved.
+    © <span id="year"></span> Ivan Simiyu. All rights reserved.
   </footer>
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
     const btn = document.getElementById('menu-btn');
     const menu = document.getElementById('mobile-menu');
-    btn.addEventListener('click', () => menu.classList.toggle('hidden'));
-    document.getElementById('submit').addEventListener('submit', function(event) {
-    // Change the form content to thank you message using JavaScript
-    document.getElementById('main-content').innerHTML = `<section class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center">
-    <h1 class="text-4xl font-bold text-emerald-600 mb-6">Thank You!</h1>
-    <p class="text-lg text-slate-700 mb-8">
-      Your message has been successfully submitted. I’ll get back to you as soon as possible.  
-    </p>
-    <a href="index.html" class="inline-block bg-emerald-600 text-white px-6 py-3 rounded-lg shadow hover:bg-emerald-700 transition">
-      Back to Home
-    </a>
-  </section>` 
-});
-// Deleted the thank you page and replaced it with JS to show thank you message on the same page.
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
   </script>
 </body>
 </html>
