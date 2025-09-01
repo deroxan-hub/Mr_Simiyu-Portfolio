@@ -5,6 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ivan Simiyu - Radio Production Consultant</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .project-image {
+      width: 100%;
+      height: 180px;
+      object-fit: contain;
+      background-color: #f8fafc;
+      padding: 8px;
+      border-radius: 0.5rem;
+    }
+    .project-card:hover .project-image {
+      transform: scale(1.02);
+      transition: transform 0.3s ease;
+    }
+  </style>
 </head>
 <body class="bg-slate-50 text-slate-800">
 
@@ -49,7 +63,7 @@
         Radio Production Consultancy
       </h1>
       <p class="text-base sm:text-lg leading-relaxed text-slate-600 mb-6">
-        Hi, I’m [Ivan Simiyu], a dedicated radio production consultant 
+        Hi, I'm Ivan Simiyu, a dedicated radio production consultant 
         helping stations, podcasters, and media brands craft engaging audio experiences. 
         From show design to audio branding and strategy, I bring creativity and expertise 
         to every project.
@@ -61,7 +75,7 @@
 
     <!-- Profile Photo -->
     <div class="flex justify-center">
-      <img src="IMG_2414.PNG" alt="[Ivan Simiyu] - Radio Consultant"
+      <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&h=400&q=80" alt="Ivan Simiyu - Radio Consultant"
            class="rounded-2xl shadow-lg object-cover w-64 h-64">
     </div>
   </section>
@@ -73,7 +87,9 @@
 
       <!-- Example Project Card -->
       <div class="rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition p-4 bg-white">
-        <img src="IMG_0495.jpg" alt="Podcast Strategy" class="rounded-lg w-full h-40 object-cover" />
+        <div class="flex items-center justify-center bg-slate-100 rounded-lg p-2">
+          <img src="https://images.unsplash.com/photo-1589903308904-d969a5ad15d9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=400&q=80" alt="Podcast Strategy" class="project-image" />
+        </div>
         <h3 class="mt-4 font-semibold text-lg">Podcast Strategy</h3>
         <p class="text-slate-600 text-sm mt-2">
           Consulted for podcasts on content direction, sound branding, and listener engagement.
@@ -81,17 +97,30 @@
       </div>
 
       <div class="rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition p-4 bg-white">
-        <img src="IMG_0246.PNG" alt="Studio Training" class="rounded-lg w-full h-40 object-cover" />
+        <div class="flex items-center justify-center bg-slate-100 rounded-lg p-2">
+          <img src="https://images.unsplash.com/photo-1601924994987-69e26d50dc26?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=400&q=80" alt="Studio Training" class="project-image" />
+        </div>
         <h3 class="mt-4 font-semibold text-lg">Studio Training</h3>
         <p class="text-slate-600 text-sm mt-2">
           Provided training on production equipment, live broadcasting, and sound engineering.
         </p>
       </div>
 
+      <!-- Additional Project Card -->
+      <div class="rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition p-4 bg-white">
+        <div class="flex items-center justify-center bg-slate-100 rounded-lg p-2">
+          <img src="https://images.unsplash.com/photo-1599658880436-444c5a6f90ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=400&q=80" alt="Audio Branding" class="project-image" />
+        </div>
+        <h3 class="mt-4 font-semibold text-lg">Audio Branding</h3>
+        <p class="text-slate-600 text-sm mt-2">
+          Developed unique audio identities for radio stations and media companies.
+        </p>
+      </div>
+
     </div>
   </section>
 
-    <!-- Skills Section -->
+  <!-- Skills Section -->
   <section id="skills" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
     <h2 class="text-2xl font-bold text-slate-900 mb-8">Top Skills</h2>
     <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
@@ -144,7 +173,6 @@
 
     </div>
   </section>
-
 
   <!-- Footer -->
   <footer class="mt-16 border-t border-slate-200 py-8 text-center text-sm text-slate-500">
